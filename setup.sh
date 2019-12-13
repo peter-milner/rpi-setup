@@ -10,9 +10,9 @@ echo 'static domain_name_servers=192.168.0.1' >> /etc/dhcpcd.conf
 curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker pi
 sudo apt-get install libffi-dev libssl-dev -y
-sudo apt-get install -y python python-pip
+sudo apt-get install python python-pip -y
 sudo apt-get remove python-configparser -y
 sudo pip install docker-compose
 
 # Reboot
-reboot
+sudo reboot
